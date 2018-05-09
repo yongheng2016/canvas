@@ -18,7 +18,7 @@
 
 ### 绘制图形：(canvas是基于状态的绘制，即向做好绘制计划，最后染色绘制)
 1. 移动画笔`moveTo(x,y)`
-2. 绘制计划
+2. 绘制计划(形状)
    + 线段：`lineTo(x,y)`
    + 矩形：`fillRect(x, y, width, height)``strokeRect(x, y, width, height)`
    + 圆弧：`arc(x, y, radius, startAngle, endAngle, anticlockwise)`
