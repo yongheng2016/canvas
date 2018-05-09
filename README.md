@@ -30,11 +30,10 @@
        + 二次：`quadraticCurveTo(cp1x, cp1y, x, y)`
        + 三次：`bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)`
      + Path2D对象
-     ```
-<code>new Path2D();     // 空的Path对象</code><br>
+     ```<code>new Path2D();     // 空的Path对象</code><br>
 <code>new Path2D(path); // 克隆Path对象</code><br>
 <code>new Path2D(d);    // 从SVG建立Path对象</code>
-```
+     ```
 + SVG paths
 
 #### 设置画笔样式
