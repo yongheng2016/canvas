@@ -17,8 +17,8 @@
 > 当你调用`fill()`函数时，所有没有闭合的形状都会自动闭合，所以你不需要调用`closePath()`函数。但是调用`stroke()`时不会自动闭合。
 
 ### 绘制图形：(canvas是基于状态的绘制，即向做好绘制计划，最后染色绘制)
-1 移动画笔`moveTo(x,y)`
-2 绘制计划
+1. 移动画笔`moveTo(x,y)`
+2. 绘制计划
    + 线段：`lineTo(x,y)`
    + 矩形：`fillRect(x, y, width, height)``strokeRect(x, y, width, height)`
    + 圆弧：`arc(x, y, radius, startAngle, endAngle, anticlockwise)`
@@ -35,7 +35,7 @@
         + new Path2D(d);    // 从SVG建立Path对象
    + SVG paths
 
-3 设置画笔样式
-4 确定绘制：
+3. 设置画笔样式
+4. 确定绘制：
 + `fill()` 填充
 + `stroke()` 描边
