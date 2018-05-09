@@ -7,9 +7,9 @@
 + 在JS代码中更改canvas属性值
 
 ### canvas使用：
-+ 布置画布：添加canvas标签元素
-+ 获取画布：通过canvas标签id，获取canvas对象
-+ 获取画笔：通过canvas对象的getContext("2d")方法，获取2D环境
++ 布置画布：添加`<canvas>`标签元素
++ 获取画布：通过`<canvas>`标签id，获取canvas对象
++ 获取画笔：通过canvas对象的`getContext("2d")`方法，获取2D环境
 
 ### canvas绘制都数值都基于px值
 
@@ -17,7 +17,7 @@
 > 当你调用`fill()`函数时，所有没有闭合的形状都会自动闭合，所以你不需要调用`closePath()`函数。但是调用`stroke()`时不会自动闭合。
 
 ### 绘制图形：(canvas是基于状态的绘制，即向做好绘制计划，最后染色绘制)
-+ 移动画笔moveTo
++ 移动画笔`moveTo(x,y)`
 + 绘制计划
    + 线段：`lineTo(x,y)`
    + 矩形：`fillRect(x, y, width, height)``strokeRect(x, y, width, height)`
