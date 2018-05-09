@@ -1,5 +1,45 @@
-[https://yuque.com/airing/canvas/readme](https://yuque.com/airing/canvas/readme)
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5</title>
+    <style>
+        #canvas-demo {
+            display: block;
+            border: 1px solid gold;
+            margin: 30px auto;
+        }
+
+        #explain {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        li {
+            padding: 2px 0;
+        }
+
+        code {
+            margin: 0 2px;
+            background: rgba(61, 110, 119, 0.383);
+            color: #000;
+        }
+
+        .title {
+            color: rgb(68, 45, 59);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas-demo" width="800" height="600">
+        你的浏览器不支持canvas
+    </canvas>
+    <ul id="explain">
         <li class="title">canvas是行内元素</li>
         <li>
             <span class="title">设置画布大小只有两种方法</span>
@@ -85,3 +125,50 @@
                 </li>
             </ul>
         </li>
+
+    </ul>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById('canvas-demo')
+            var context = canvas.getContext('2d')
+
+            //绘制计划
+            context.beginPath()
+            context.moveTo(100, 100)
+            context.lineTo(300, 300)
+            context.lineTo(100, 500)
+            //画笔设置
+            context.lineWidth = 5
+            context.strokeStyle = 'green'
+            //描边
+            context.stroke()
+            context.closePath()
+            // ==================================
+            context.beginPath()
+            context.moveTo(200, 100)
+            context.lineTo(400, 300)
+            context.lineTo(200, 500)
+
+            context.lineWidth = 5
+            context.strokeStyle = 'red'
+
+            context.stroke()
+            context.closePath()
+
+            // ==================================
+            context.beginPath()
+            context.moveTo(300, 100)
+            context.lineTo(500, 300)
+            context.lineTo(300, 500)
+
+            context.lineWidth = 5
+            context.strokeStyle = 'blue'
+
+            context.stroke()
+            context.closePath()
+
+        }
+    </script>
+</body>
+
+</html>
