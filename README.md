@@ -1,4 +1,3 @@
-[https://yuque.com/airing/canvas/readme](https://yuque.com/airing/canvas/readme)
 
 ### canvas是行内元素
 
@@ -39,3 +38,6 @@
 4. 确定绘制：
 + `fill()` 填充
 + `stroke()` 描边
+
++ [Canvas ](https://www.google.com/search?q=mdn+canvas&oq=mdn+canvas&aqs=chrome..69i57j0l5.5325j0j8&sourceid=chrome&ie=UTF-8)
+[https://yuque.com/airing/canvas/readme](https://yuque.com/airing/canvas/readme)
