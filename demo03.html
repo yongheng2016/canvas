@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <canvas id="canvas-demo03"></canvas>
+    </div>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById('canvas-demo03')
+            canvas.width = 800
+            canvas.height = 600
+            var context = canvas.getContext('2d')
+
+            context.beginPath()
+            context.moveTo(100,250)
+            context.quadraticCurveTo(240, 14, 400, 250)
+            context.stroke()
+            context.closePath()
+
+
+            context.beginPath()
+            context.strokeStyle = 'red'
+            context.moveTo(100,250)
+            context.quadraticCurveTo(150, 100, 293, 450, 400, 250)
+            context.stroke()  
+            context.closePath()          
+        }
+    </script>
+</body>
+</html>
